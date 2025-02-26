@@ -1,0 +1,1 @@
+<template><hero-section /></template>
