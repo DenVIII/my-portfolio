@@ -1,1 +1,4 @@
-<template><hero-section /></template>
+<template>
+  <hero-section />
+  <projects-section />
+</template>
