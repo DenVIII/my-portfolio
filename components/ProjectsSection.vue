@@ -1,10 +1,36 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const projectsData = ref([
+  {
+    title: "Портфолио для 3D-визуализатора",
+    imgSrc: "/image/project-1.jpg",
+    url: "#",
+    git: "https://github.com/DenVIII/kris-vin-3d-visualizer-portfolio",
+  },
+  {
+    title: "База данных для доставки продуктов питания",
+    imgSrc: "/image/project-2.jpg",
+    url: "#",
+    git: "https://github.com/DenVIII/inventory-app",
+  },
+  {
+    title: "Портфолио для 3D-визуализатора",
+    imgSrc: "/image/project-1.jpg",
+    url: "#",
+    git: "https://github.com/DenVIII/kris-vin-3d-visualizer-portfolio",
+  },
+]);
+</script>
+
 <template>
   <section class="projects">
     <h2 class="projects__header">Проекты:</h2>
-    <project-card />
-    <project-card />
-    <project-card />
+    <project-card
+      v-for="project in projectsData"
+      :key="`Project-id-${project.title}`"
+      :project="project"
+    />
   </section>
 </template>
 <style lang="scss">

@@ -1,14 +1,25 @@
-<script setup></script>
+<script setup>
+import { defineProps } from "vue";
+
+defineProps({
+  project: {
+    type: Object,
+    required: true,
+  },
+});
+</script>
+
 <template>
   <div class="project-card">
     <div class="project-card__image">
       <div class="mask">
         <div class="container">
-          <p class="project-card__description">
-            Портфолио для 3D-визуализатора
-          </p>
+          <p class="project-card__description">{{ project.title }}</p>
           <div class="project-card__btns">
-            <a href="#">
+            <a
+              v-if="project.git !== '#'"
+              :href="project.git"
+            >
               <button>
                 <img
                   class="project-card__icon"
@@ -17,7 +28,10 @@
                 />
               </button>
             </a>
-            <a href="#">
+            <a
+              v-if="project.url !== '#'"
+              :href="project.url"
+            >
               <button>
                 <img
                   class="project-card__icon"
@@ -30,7 +44,7 @@
         </div>
       </div>
       <img
-        src="/image/project-1.jpg"
+        :src="project.imgSrc"
         class="project-card__background"
         alt=""
       />
@@ -45,12 +59,12 @@
   .container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     align-items: center;
   }
   &__image {
     margin: 60px 0;
-    max-height: 400px;
+    height: 400px;
     position: relative;
     display: block;
     overflow: hidden;
@@ -72,7 +86,7 @@
     transform: scale(0.95);
     outline-color: $background-color;
     img {
-      transform: scale(1.15);
+      transform: scale(1.1);
     }
   }
 
@@ -82,6 +96,8 @@
 
   &__description {
     color: $background-color;
+    background-color: $primary-color;
+    padding: 5px;
     font-size: $font-size-n;
     font-family: $font-family-main;
     opacity: 1;
