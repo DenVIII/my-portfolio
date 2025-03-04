@@ -1,6 +1,9 @@
 <script setup></script>
 <template>
-  <section class="contacts">
+  <section
+    class="contacts"
+    id="contacts"
+  >
     <h2 class="contacts__header">Будем на связи:</h2>
     <div class="contacts__wrapper">
       <a

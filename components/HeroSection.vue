@@ -1,13 +1,18 @@
 <script setup></script>
 <template>
-  <section class="hero">
+  <section
+    class="hero"
+    id="home"
+  >
     <p class="hero__descr">Привет, меня зовут Денис, моя профессия:</p>
     <h1 class="hero__header">
       <span class="hero__text_reduced_size">&lt;</span>веб-разработчик
       <span class="hero__text_reduced_size">/&gt;</span>
       <span class="hero__text-cursor">|</span>
     </h1>
-    <a href="#"><button class="hero__contact-btn">Связаться со мной</button></a>
+    <a href="#contacts"
+      ><button class="hero__contact-btn">Связаться со мной</button></a
+    >
   </section>
 </template>
 <style lang="scss">
@@ -31,6 +36,10 @@
     color: $background-color;
     background-color: $primary-color;
     font-size: 1rem;
+    &:hover {
+      cursor: pointer;
+      background-color: $secondary-color;
+    }
   }
   &__descr {
     font-weight: 300;
