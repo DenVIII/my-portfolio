@@ -53,29 +53,5 @@ defineProps({
     font-weight: 300;
     text-align: center;
   }
-  /*  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, #f8f9fa 45%, #92e0ff 100%);
-    background-size: 150% 150%;
-    background-position: 100% 100%;
-    opacity: 0;
-    filter: blur(0);
-    z-index: -1;
-    transition: opacity 0.5s ease, filter 0.5s ease,
-      background-position 1.5s ease;
-  }
-  &:hover {
-    box-shadow: 5px 5px 20px 0 #9cc2d1;
-  }
-  &:hover::before {
-    opacity: 0.6;
-    filter: blur(5px);
-    background-position: 0 0;
-  } */
 }
 </style>

@@ -19,6 +19,7 @@
   <main class="content">
     <NuxtPage />
   </main>
+  <footer-section />
 </template>
 
 <style lang="scss">
