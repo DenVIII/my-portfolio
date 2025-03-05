@@ -47,6 +47,7 @@
   }
   &__text-cursor {
     color: $secondary-color;
+    animation: flashing 2s linear infinite;
   }
   &::after {
     content: "";
@@ -85,6 +86,21 @@
       rgba(255, 255, 255, 0.2) 70%,
       rgba(255, 255, 255, 0) 100%
     );
+  }
+
+  @keyframes flashing {
+    0% {
+      color: $secondary-color;
+    }
+    50% {
+      color: $secondary-color;
+    }
+    51% {
+      color: transparent;
+    }
+    to {
+      color: transparent;
+    }
   }
 }
 </style>
