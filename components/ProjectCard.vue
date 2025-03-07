@@ -96,11 +96,12 @@ defineProps({
 
   &__description {
     color: $background-color;
-    background-color: $primary-color;
+    background-color: hsla(222, 47%, 11%, 0.5);
     padding: 5px;
     font-size: $font-size-n;
     font-family: $font-family-main;
     opacity: 1;
+    width: 50%;
   }
 
   &__btns {
@@ -128,6 +129,42 @@ defineProps({
     display: flex;
     flex-direction: column;
     justify-content: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    &__image {
+      height: 275px;
+      margin: 40px 0;
+    }
+    &__description {
+      font-size: 1rem;
+    }
+    .mask {
+      height: 275px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .project-card {
+    &__image {
+      height: 220px;
+      margin: 20px 0;
+    }
+    &__description {
+      width: 100%;
+    }
+    .container {
+      flex-direction: column;
+      height: 100%;
+    }
+    .mask {
+      padding: 10px;
+      height: 220px;
+      display: block;
+    }
   }
 }
 </style>

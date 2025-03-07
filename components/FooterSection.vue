@@ -10,4 +10,17 @@ footer {
   font-family: $font-family-main;
   color: #4c5466;
 }
+
+@media (max-width: 768px) {
+  footer {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 440px) {
+  footer {
+    max-width: 290px;
+    padding: 30px 0;
+  }
+}
 </style>

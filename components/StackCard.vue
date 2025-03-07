@@ -54,4 +54,26 @@ defineProps({
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .logo {
+    width: 110px;
+    height: 110px;
+    &__img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .logo {
+    width: 70px;
+    height: 70px;
+    &__img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
 </style>

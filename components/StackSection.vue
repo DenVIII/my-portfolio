@@ -106,7 +106,6 @@ const stackCardsList = ref([
 
 .stack {
   &__header {
-    font-size: $font-size-l;
     margin-bottom: 60px;
   }
   &__list {
@@ -115,6 +114,28 @@ const stackCardsList = ref([
     justify-content: center;
     row-gap: 40px;
     column-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stack {
+    &__header {
+      margin-bottom: 40px;
+    }
+    &__list {
+      column-gap: 0;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .stack {
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__list {
+      row-gap: 30px;
+    }
   }
 }
 </style>

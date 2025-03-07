@@ -21,6 +21,10 @@ h3 {
   color: $text-color;
 }
 
+h2 {
+  font-size: $font-size-l;
+}
+
 p,
 a,
 button {
@@ -43,4 +47,30 @@ body {
 .content {
   max-width: $content-width;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 550px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p,
+  a,
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .content {
+    max-width: 290px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }

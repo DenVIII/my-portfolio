@@ -35,4 +35,25 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .navbar {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
 </style>

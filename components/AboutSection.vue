@@ -27,4 +27,16 @@
     line-height: 150%;
   }
 }
+
+@media (max-width: 768px) {
+  .about {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 440px) {
+  .about {
+    margin-top: 90px;
+  }
+}
 </style>

@@ -11,13 +11,13 @@ const projectsData = ref([
   {
     title: "База данных для доставки продуктов питания",
     imgSrc: "/image/project-2.jpg",
-    url: "#",
+    url: "https://github.com/DenVIII/inventory-app",
     git: "https://github.com/DenVIII/inventory-app",
   },
   {
-    title: "Портфолио для 3D-визуализатора",
+    title: "Сайт-портфолио для 3D-визуализатора",
     imgSrc: "/image/project-1.jpg",
-    url: "#",
+    url: "https://github.com/DenVIII/inventory-app",
     git: "https://github.com/DenVIII/kris-vin-3d-visualizer-portfolio",
   },
 ]);
@@ -38,8 +38,5 @@ const projectsData = ref([
 
 .projects {
   margin-top: 40px;
-  &__header {
-    font-size: $font-size-l;
-  }
 }
 </style>

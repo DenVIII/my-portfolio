@@ -103,4 +103,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    &__header {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .hero {
+    &__header {
+      font-size: 2.1rem;
+    }
+    &__descr {
+      font-size: 0.75rem;
+    }
+  }
+}
 </style>

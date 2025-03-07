@@ -31,6 +31,7 @@
   margin: 140px 0;
   &__header {
     margin-bottom: 20px;
+    font-size: 1.5rem;
   }
   &__social {
     display: block;
@@ -39,6 +40,23 @@
   }
   &__social:hover {
     color: $secondary-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    margin: 80px 0;
+    &__header {
+      font-size: 1.2rem;
+    }
+    &__social {
+      font-size: 2rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contacts {
+    margin: 50px 0;
   }
 }
 </style>
